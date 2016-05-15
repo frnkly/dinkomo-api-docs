@@ -171,6 +171,10 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
+<aside class="success">
+Has embeddable properties.
+</aside>
+
 <p><code class="prettyprint">GET /0.1/languges/{code}</code></p>
 
           <h2 id="create-a-language-resource">Create a language resource</h2>
@@ -241,6 +245,44 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 
           <h1 id="definitions">Definitions</h1>
 
+<h2 id="embeds-for-definitions">Embeds for definitions</h2>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Contents</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>uri</td>
+<td>[string] Definition URI</td>
+</tr>
+<tr>
+<td>editUri</td>
+<td>[string] URI to definition&rsquo;s edit form</td>
+</tr>
+<tr>
+<td>mainTitle</td>
+<td>[string] Main title</td>
+</tr>
+<tr>
+<td>titleString</td>
+<td>[string] All titles, as a string</td>
+</tr>
+<tr>
+<td>titleList</td>
+<td>[array] Lists titles</td>
+</tr>
+<tr>
+<td>translation</td>
+<td>[array] Lists translations</td>
+</tr>
+<tr>
+<td>languageList</td>
+<td>[array] Lists languages</td>
+</tr>
+</tbody></table>
+
           <h2 id="list-definitions">List definitions</h2>
 
 <blockquote>
@@ -275,12 +317,69 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 <pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="c1">// ...
+// /api/0.1/definition/8MyQRHYM?embed=uri,editUri,mainTitle,titleString,titleList,translation,languageList
 </span></code></pre>
 
 <blockquote>
 <p>Sample response</p>
 </blockquote>
-<pre class="highlight json"><code><span class="w">
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"word"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"subType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"noun"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"mainLanguageCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"twi"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"rating"</span><span class="p">:</span><span class="w"> </span><span class="err">​</span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+    </span><span class="nt">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-04-09 13:10:07"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-04-09 13:10:07"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://dinkomo.frnk.ca/twi/ɔdɔ"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"editUri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://dinkomo.frnk.ca/admin/definition/8MyQRHYM/edit?return=summary"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"mainTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ɔdɔ"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"titleString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ɔdɔ, dɔ"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"titleList"</span><span class="p">:</span><span class="w">
+    </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+
+            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ɔdɔ"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"transliteration"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-05-13 14:39:09"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-05-13 14:39:09"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dɔ"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"transliteration"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-05-13 14:39:09"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-05-13 14:39:09"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nt">"translation"</span><span class="p">:</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"practical"</span><span class="p">:</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">"love"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"literal"</span><span class="p">:</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"meaning"</span><span class="p">:</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">"an intense feeling of deep affection"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"languageList"</span><span class="p">:</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"twi"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Asante Twi"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"aka"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Akan"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8MyQRHYM"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"definition"</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre>
 
 <p><code class="prettyprint">GET /0.1/definitions/{id}</code></p>

@@ -25,7 +25,7 @@ activate :autoprefixer do |config|
 end
 
 # Activate live reload
-activate :livereload
+#activate :livereload
 
 # Github pages require relative links
 activate :relative_assets
