@@ -129,6 +129,44 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 
           <h1 id="languages">Languages</h1>
 
+<h2 id="embeds-for-languages">Embeds for languages</h2>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Contents</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>uri</td>
+<td>[string] Language URI</td>
+</tr>
+<tr>
+<td>editUri</td>
+<td>[string] URI to language&rsquo;s edit form</td>
+</tr>
+<tr>
+<td>parentName</td>
+<td>[string] Name of parent language</td>
+</tr>
+<tr>
+<td>definitionsCount</td>
+<td>[integer]</td>
+</tr>
+<tr>
+<td>firstDefinition</td>
+<td>[object]</td>
+</tr>
+<tr>
+<td>latestDefinition</td>
+<td>[object]</td>
+</tr>
+<tr>
+<td>randomDefinition</td>
+<td>[object]</td>
+</tr>
+</tbody></table>
+
           <h2 id="list-languages">List languages</h2>
 
 <blockquote>
@@ -163,12 +201,82 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 <pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="c1">// ...
+// /api/0.1/language/OJjYiQEa?embed=parentName,definitionsCount,uri,editUri,firstDefinition,latestDefinition,randomDefinition
 </span></code></pre>
 
 <blockquote>
 <p>Sample response</p>
 </blockquote>
-<pre class="highlight json"><code><span class="w">
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"twi"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"parentCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aka"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Asante Twi"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"transliteration"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"altNames"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ashanti,  Twi"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-04-09 13:08:27"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-05-03 14:08:58"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"parentName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Akan"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"definitionsCount"</span><span class="p">:</span><span class="w"> </span><span class="err">​</span><span class="mi">950</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://dinkomo.frnk.ca/twi"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"editUri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://dinkomo.frnk.ca/admin/language/twi/edit"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"firstDefinition"</span><span class="p">:</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"mainTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ɔdɔ"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"translation"</span><span class="p">:</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"practical"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">"love"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"literal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"meaning"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">"an intense feeling of deep affection"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"word"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"subType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"noun"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"latestDefinition"</span><span class="p">:</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"mainTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dua"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"translation"</span><span class="p">:</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"practical"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tail"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"literal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"meaning"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"word"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"subType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"noun"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"randomDefinition"</span><span class="p">:</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"mainTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"wie"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"translation"</span><span class="p">:</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"practical"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">"finish"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"literal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"meaning"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"word"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"subType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"verb"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OJjYiQEa"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"language"</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre>
 
 <aside class="success">
