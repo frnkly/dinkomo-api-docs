@@ -56,46 +56,10 @@
 
 <ul>
 <li>Current Version: <strong>Draft 1</strong></li>
-<li>Root Endpoint: <strong>https://dinkomo.frnk.ca/0.1/</strong></li>
+<li>Root Endpoint: <strong>https://dinkomo.frnk.ca/api/0.1/</strong></li>
 </ul>
 
-          <h2 id="embeds">Embeds</h2>
-
-<aside class="warning">
-In Development.
-</aside>
-
-<p>Embeds, sometimes referred to as <em>expansions</em>, allow you to include related data to a model in a single request.</p>
-
-          <h2 id="working-with-collections">Working with Collections</h2>
-
-<aside class="warning">
-In Development.
-</aside>
-
-<h3 id="sorting">Sorting</h3>
-
-<h3 id="filtering">Filtering</h3>
-
-<h3 id="field-selection">Field Selection</h3>
-
-<h3 id="paging">Paging</h3>
-
-          <h2 id="method-spoofing">Method Spoofing</h2>
-
-<aside class="warning">
-In Development.
-</aside>
-
-<p>For clients that don&rsquo;t support the <code class="prettyprint">PUT</code>, <code class="prettyprint">PATCH</code> or <code class="prettyprint">DELETE</code>, these verbs can be simulated with the <code class="prettyprint">X-HTTP-Method-Override</code> HTTP header.</p>
-
-          <h2 id="rate-limiting">Rate Limiting</h2>
-
-<aside class="warning">
-In Development.
-</aside>
-
-          <h1 id="authentication">Authentication</h1>
+          <h2 id="authentication">Authentication</h2>
 
 <blockquote>
 <p>To authorize, use this code:</p>
@@ -127,229 +91,37 @@ curl <span class="s2">"api_endpoint_here"</span>
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-          <h1 id="languages">Languages</h1>
+          <h2 id="working-with-collections">Working with Collections</h2>
 
-<h2 id="embeds-for-languages">Embeds for languages</h2>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Contents</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>uri</td>
-<td>[string] Language URI</td>
-</tr>
-<tr>
-<td>editUri</td>
-<td>[string] URI to language&rsquo;s edit form</td>
-</tr>
-<tr>
-<td>parentName</td>
-<td>[string] Name of parent language</td>
-</tr>
-<tr>
-<td>definitionsCount</td>
-<td>[integer]</td>
-</tr>
-<tr>
-<td>firstDefinition</td>
-<td>[object]</td>
-</tr>
-<tr>
-<td>latestDefinition</td>
-<td>[object]</td>
-</tr>
-<tr>
-<td>randomDefinition</td>
-<td>[object]</td>
-</tr>
-</tbody></table>
-
-          <h2 id="list-languages">List languages</h2>
-
-<blockquote>
-<p>Sample request</p>
-</blockquote>
-<pre class="highlight shell"><code>
-</code></pre>
-<pre class="highlight javascript"><code><span class="c1">// ...</span>
-</code></pre>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="c1">// ...
-</span></code></pre>
-
-<blockquote>
-<p>Sample response</p>
-</blockquote>
-<pre class="highlight json"><code><span class="w">
-</span></code></pre>
-
-<p><code class="prettyprint">GET /0.1/languages</code></p>
-
-          <h2 id="retrieve-a-language-resource">Retrieve a language resource</h2>
-
-<blockquote>
-<p>Sample request</p>
-</blockquote>
-<pre class="highlight shell"><code>
-</code></pre>
-<pre class="highlight javascript"><code><span class="c1">// ...</span>
-</code></pre>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="c1">// ...
-// /api/0.1/language/OJjYiQEa?embed=parentName,definitionsCount,uri,editUri,firstDefinition,latestDefinition,randomDefinition
-</span></code></pre>
-
-<blockquote>
-<p>Sample response</p>
-</blockquote>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"twi"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"parentCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aka"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Asante Twi"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"transliteration"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"altNames"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ashanti,  Twi"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-04-09 13:08:27"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-05-03 14:08:58"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"parentName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Akan"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"definitionsCount"</span><span class="p">:</span><span class="w"> </span><span class="err">​</span><span class="mi">950</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://dinkomo.frnk.ca/twi"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"editUri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://dinkomo.frnk.ca/admin/language/twi/edit"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"firstDefinition"</span><span class="p">:</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"mainTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ɔdɔ"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"translation"</span><span class="p">:</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"practical"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">"love"</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"literal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"meaning"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">"an intense feeling of deep affection"</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"word"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"subType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"noun"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nt">"latestDefinition"</span><span class="p">:</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"mainTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dua"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"translation"</span><span class="p">:</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"practical"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tail"</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"literal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"meaning"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"word"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"subType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"noun"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nt">"randomDefinition"</span><span class="p">:</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"mainTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"wie"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"translation"</span><span class="p">:</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"practical"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">"finish"</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"literal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="nt">"meaning"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"word"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"subType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"verb"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OJjYiQEa"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"language"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<aside class="success">
-Has embeddable properties.
+<aside class="warning">
+In Development.
 </aside>
 
-<p><code class="prettyprint">GET /0.1/languges/{code}</code></p>
+<h3 id="sorting">Sorting</h3>
 
-          <h2 id="create-a-language-resource">Create a language resource</h2>
+<h3 id="filtering">Filtering</h3>
 
-<blockquote>
-<p>Sample request</p>
-</blockquote>
-<pre class="highlight shell"><code>
-</code></pre>
-<pre class="highlight javascript"><code><span class="c1">// ...</span>
-</code></pre>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<h3 id="field-selection">Field Selection</h3>
 
-<span class="c1">// ...
-</span></code></pre>
+<h3 id="paging">Paging</h3>
 
-<blockquote>
-<p>Sample response</p>
-</blockquote>
-<pre class="highlight json"><code><span class="w">
-</span></code></pre>
+          <h2 id="embeds">Embeds</h2>
 
-<p><code class="prettyprint">POST /0.1/languages</code></p>
+<p>Embeds, sometimes referred to as <em>expansions</em>, allow you to include related data to a model in a single request.</p>
 
-          <h2 id="update-a-language-resource">Update a language resource</h2>
+          <h2 id="method-spoofing">Method Spoofing</h2>
 
-<blockquote>
-<p>Sample request</p>
-</blockquote>
-<pre class="highlight shell"><code>
-</code></pre>
-<pre class="highlight javascript"><code><span class="c1">// ...</span>
-</code></pre>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<aside class="warning">
+In Development.
+</aside>
 
-<span class="c1">// ...
-</span></code></pre>
+<p>For clients that don&rsquo;t support the <code class="prettyprint">PUT</code>, <code class="prettyprint">PATCH</code> or <code class="prettyprint">DELETE</code>, these verbs can be simulated with the <code class="prettyprint">X-HTTP-Method-Override</code> HTTP header.</p>
 
-<blockquote>
-<p>Sample response</p>
-</blockquote>
-<pre class="highlight json"><code><span class="w">
-</span></code></pre>
+          <h2 id="rate-limiting">Rate Limiting</h2>
 
-<p><code class="prettyprint">PUT /0.1/languages/{code}</code></p>
-
-          <h2 id="delete-a-language-resource">Delete a language resource</h2>
-
-<blockquote>
-<p>Sample request</p>
-</blockquote>
-<pre class="highlight shell"><code>
-</code></pre>
-<pre class="highlight javascript"><code><span class="c1">// ...</span>
-</code></pre>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="c1">// ...
-</span></code></pre>
-
-<blockquote>
-<p>Sample response</p>
-</blockquote>
-<pre class="highlight json"><code><span class="w">
-</span></code></pre>
-
-<p><code class="prettyprint">DELETE /0.1/languages/{id}</code></p>
+<aside class="warning">
+In Development.
+</aside>
 
           <h1 id="definitions">Definitions</h1>
 
@@ -625,6 +397,206 @@ Has embeddable properties.
 </span></code></pre>
 
 <p><code class="prettyprint">GET /0.1/{definitionType}/title/{title}</code></p>
+
+          <h1 id="languages">Languages</h1>
+
+<h2 id="embeds-for-languages">Embeds for languages</h2>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Contents</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>uri</td>
+<td>[string] Language URI</td>
+</tr>
+<tr>
+<td>editUri</td>
+<td>[string] URI to language&rsquo;s edit form</td>
+</tr>
+<tr>
+<td>parentName</td>
+<td>[string] Name of parent language</td>
+</tr>
+<tr>
+<td>definitionsCount</td>
+<td>[integer]</td>
+</tr>
+<tr>
+<td>firstDefinition</td>
+<td>[object]</td>
+</tr>
+<tr>
+<td>latestDefinition</td>
+<td>[object]</td>
+</tr>
+<tr>
+<td>randomDefinition</td>
+<td>[object]</td>
+</tr>
+</tbody></table>
+
+          <h2 id="list-languages">List languages</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">GET /0.1/languages</code></p>
+
+          <h2 id="retrieve-a-language-resource">Retrieve a language resource</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+// /api/0.1/language/OJjYiQEa?embed=parentName,definitionsCount,uri,editUri,firstDefinition,latestDefinition,randomDefinition
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"twi"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"parentCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aka"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Asante Twi"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"transliteration"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"altNames"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ashanti,  Twi"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-04-09 13:08:27"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-05-03 14:08:58"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"parentName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Akan"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"definitionsCount"</span><span class="p">:</span><span class="w"> </span><span class="err">​</span><span class="mi">950</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"uri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://dinkomo.frnk.ca/twi"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"editUri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://dinkomo.frnk.ca/admin/language/twi/edit"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"firstDefinition"</span><span class="p">:</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"mainTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ɔdɔ"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"translation"</span><span class="p">:</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"practical"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">"love"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"literal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"meaning"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"eng"</span><span class="p">:</span><span class="w"> </span><span class="s2">"an intense feeling of deep affection"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"word"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"subType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"noun"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"latestDefinition"</span><span class="p">:</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="err">...</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"randomDefinition"</span><span class="p">:</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="err">...</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OJjYiQEa"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"language"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<aside class="success">
+Has embeddable properties.
+</aside>
+
+<p><code class="prettyprint">GET /0.1/languges/{code}</code></p>
+
+          <h2 id="create-a-language-resource">Create a language resource</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">POST /0.1/languages</code></p>
+
+          <h2 id="update-a-language-resource">Update a language resource</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">PUT /0.1/languages/{code}</code></p>
+
+          <h2 id="delete-a-language-resource">Delete a language resource</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">DELETE /0.1/languages/{id}</code></p>
+
+          <h1 id="alphabets">Alphabets</h1>
+
+          <h1 id="countries">Countries</h1>
 
       </div>
       <div class="dark-box">

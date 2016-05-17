@@ -12,19 +12,11 @@ toc_footers:
 
 includes:
   - intro/overview
-  - intro/embeds
+  - intro/authentication
   - intro/collections
+  - intro/embeds
   - intro/spoofing
   - intro/rate-limiting
-
-  - authentication
-
-  - languages/intro
-  - languages/list
-  - languages/get
-  - languages/post
-  - languages/put
-  - languages/delete
 
   - definitions/intro
   - definitions/list
@@ -37,6 +29,17 @@ includes:
   - types/count
   - types/search
   - types/title
+
+  - languages/intro
+  - languages/list
+  - languages/get
+  - languages/post
+  - languages/put
+  - languages/delete
+
+  - alphabets/intro
+
+  - countries/intro
 
 search: true
 ---
