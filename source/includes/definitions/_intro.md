@@ -10,4 +10,5 @@
 | titleString | [string] All titles, as a string |
 | titleList | [array] Lists titles |
 | translation | [array] Lists translations |
+| mainLanguage | [object] |
 | languageList | [array] Lists languages |
