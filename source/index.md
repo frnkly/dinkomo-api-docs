@@ -1,5 +1,5 @@
 ---
-title: Di Nkomo API Reference
+title: Di Nkɔmɔ API Reference
 
 language_tabs:
   - shell: Shell
@@ -7,7 +7,7 @@ language_tabs:
   - php: PHP
 
 toc_footers:
-  - <a href='http://dinkomo.frnk.ca'>Di Nkomo</a>
+  - <a href='http://dinkomo.frnk.ca'>Di Nkɔmɔ</a>
   - <a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
@@ -29,6 +29,8 @@ includes:
   - types/count
   - types/search
   - types/title
+
+  - tags/intro
 
   - languages/intro
   - languages/list
