@@ -18,6 +18,12 @@ includes:
   - intro/spoofing
   - intro/rate-limiting
 
+  - alphabets/intro
+
+  - countries/intro
+
+  - cultures/intro
+
   - definitions/intro
   - definitions/list
   - definitions/get
@@ -30,8 +36,6 @@ includes:
   - types/search
   - types/title
 
-  - tags/intro
-
   - languages/intro
   - languages/list
   - languages/get
@@ -39,9 +43,9 @@ includes:
   - languages/put
   - languages/delete
 
-  - alphabets/intro
+  - references/intro
 
-  - countries/intro
+  - tags/intro
 
 search: true
 ---
