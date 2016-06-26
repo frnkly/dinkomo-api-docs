@@ -3,6 +3,7 @@
 .bundle
 .config
 coverage
+Envoy.blade.php
 InstalledFiles
 lib/bundler/man
 pkg
