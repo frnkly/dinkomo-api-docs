@@ -30,6 +30,7 @@ includes:
   - definitions/post
   - definitions/put
   - definitions/delete
+  - definitions/daily
 
   - types/intro
   - types/count

@@ -61,8 +61,7 @@
     cd {{ $releasesDir }};
 
     # Clone the repository into a new folder.
-    #git clone --depth 1 {{ $repository }} {{ $newReleaseName }}  &> /dev/null;
-    git clone --depth 1 {{ $repository }} {{ $newReleaseName }};
+    git clone --depth 1 {{ $repository }} {{ $newReleaseName }}  &> /dev/null;
 
 @endtask
 
