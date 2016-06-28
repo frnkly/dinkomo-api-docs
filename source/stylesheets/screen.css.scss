@@ -177,6 +177,7 @@ html, body {
     box-shadow: 0px 1px 0px $nav-active-shadow;
     background-color: $nav-active-bg;
     color: $nav-active-text;
+    padding-left: 5px;
   }
 
   // Subheaders are the submenus that slide open
@@ -430,11 +431,11 @@ html, body {
     }
 
     tr:nth-child(odd)>td {
-      background-color: lighten($main-bg,4.2%);
+      background-color: lighten($main-bg, 4.2%);
     }
 
     tr:nth-child(even)>td {
-      background-color: lighten($main-bg,2.4%);
+      background-color: lighten($main-bg, 2.4%);
     }
   }
 
