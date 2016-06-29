@@ -11,6 +11,7 @@ toc_footers:
   - <a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
+  - intro/welcome
   - intro/overview
   - intro/authentication
   - intro/collections
@@ -50,9 +51,3 @@ includes:
 
 search: true
 ---
-
-# Introduction
-
-Welcome to the Di Nkɔmɔ API.
-
-Yada yada [Di Nkomo](http://dinkomo.frnk.ca).
