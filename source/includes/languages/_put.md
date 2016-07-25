@@ -22,4 +22,4 @@
 
 ```
 
-`PUT /0.1/languages/{code}`
+`PUT /0.2/language/{code}`

@@ -22,4 +22,4 @@
 
 ```
 
-`POST /0.1/languages`
+`POST /0.2/language`

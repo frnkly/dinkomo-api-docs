@@ -1,4 +1,4 @@
 ## Overview
 
-- Current Version: **Draft 1**
-- Root Endpoint: **https://dinkomo.frnk.ca/api/0.1/**
+- Current Version: **Draft 2**
+- Root Endpoint: **https://api.dinkomo.frnk.ca/0.2/**

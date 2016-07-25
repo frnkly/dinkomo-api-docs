@@ -1,4 +1,4 @@
-## Delete a language resource
+## Update an alphabet
 
 > Sample request
 
@@ -22,4 +22,4 @@
 
 ```
 
-`DELETE /0.2/language/{id}`
+`PUT /0.2/alphabet/{id}`

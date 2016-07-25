@@ -54,8 +54,8 @@
           <h2 id="overview">Overview</h2>
 
 <ul>
-<li>Current Version: <strong>Draft 1</strong></li>
-<li>Root Endpoint: <strong>https://dinkomo.frnk.ca/api/0.1/</strong></li>
+<li>Current Version: <strong>Draft 2</strong></li>
+<li>Root Endpoint: <strong>https://api.dinkomo.frnk.ca/0.2/</strong></li>
 </ul>
 
           <h2 id="authentication">Authentication</h2>
@@ -124,9 +124,321 @@ In Development.
 
           <h1 id="alphabets">Alphabets</h1>
 
+          <h2 id="list-alphabets">List alphabets</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">34</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"per_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"current_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"last_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"next_page_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.dinkomo.frnk.ca/0.2/alphabet?page=2"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"prev_page_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"from"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"to"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ፊደል"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"transliteration"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ፊደል"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"amh-Ethi"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"scriptCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ethi"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"letters"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-08 03:28:14"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-24 22:33:07"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nMY3oCmE"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alphabet"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Twi Alphabet"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"transliteration"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Twi Alphabet"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"twi-Latn"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"scriptCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Latn"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"letters"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abdeɛfghiklmnoɔprstuwy\nABDEƐFGHIKLMNOƆPRSTUWY"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-06 23:23:02"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-24 22:33:07"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DEPjLtzM"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alphabet"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">GET /0.2/alphabet</code></p>
+
+          <h2 id="retrieve-an-alphabet">Retrieve an alphabet</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Twi Alphabet"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"transliteration"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Twi Alphabet"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"twi-Latn"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"scriptCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Latn"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"letters"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abdeɛfghiklmnoɔprstuwy\nABDEƐFGHIKLMNOƆPRSTUWY"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-06 23:23:02"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-24 22:33:07"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DEPjLtzM"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alphabet"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">GET /0.2/alphabet/{id}</code></p>
+
+          <h2 id="create-an-alphabet">Create an alphabet</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">POST /0.2/alphabet</code></p>
+
+          <h2 id="update-an-alphabet">Update an alphabet</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">PUT /0.2/alphabet/{id}</code></p>
+
+          <h2 id="delete-an-alphabet">Delete an alphabet</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">DELETE /0.2/alphabet/{id}</code></p>
+
           <h1 id="countries">Countries</h1>
 
+          <h2 id="list-countries">List countries</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">264</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"per_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"current_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"last_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"next_page_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.dinkomo.frnk.ca/0.2/country?page=2"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"prev_page_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"from"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"to"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Åland Islands"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"altNames"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AX"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-06 23:22:34"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-24 22:33:07"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"YEpvf75M"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"country"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Zimbabwe"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"altNames"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ZW"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-06 23:22:34"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-24 22:33:07"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NE1PfwXW"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"country"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">GET /0.2/country</code></p>
+
+          <h2 id="retrieve-a-country">Retrieve a country</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Zimbabwe"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"altNames"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ZW"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-06 23:22:34"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-24 22:33:07"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NE1PfwXW"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"country"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">GET /0.2/country/{id}</code></p>
+
+          <h2 id="create-a-country">Create a country</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">POST /0.2/country</code></p>
+
+          <h2 id="update-a-country">Update a country</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">PUT /0.2/country/{id}</code></p>
+
+          <h2 id="delete-a-country">Delete a country</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">DELETE /0.2/country/{id}</code></p>
+
           <h1 id="cultures">Cultures</h1>
+
+<aside class="info">
+In development&hellip;
+</aside>
 
           <h1 id="definitions">Definitions</h1>
 
@@ -481,7 +793,7 @@ In Development.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.1/languages</code></p>
+<p><code class="prettyprint">GET /0.2/language</code></p>
 
           <h2 id="retrieve-a-language-resource">Retrieve a language resource</h2>
 
@@ -549,7 +861,7 @@ In Development.
 Has embeddable properties.
 </aside>
 
-<p><code class="prettyprint">GET /0.1/languges/{code}</code></p>
+<p><code class="prettyprint">GET /0.2/language/{code}</code></p>
 
           <h2 id="create-a-language-resource">Create a language resource</h2>
 
@@ -571,7 +883,7 @@ Has embeddable properties.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">POST /0.1/languages</code></p>
+<p><code class="prettyprint">POST /0.2/language</code></p>
 
           <h2 id="update-a-language-resource">Update a language resource</h2>
 
@@ -593,7 +905,7 @@ Has embeddable properties.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">PUT /0.1/languages/{code}</code></p>
+<p><code class="prettyprint">PUT /0.2/language/{code}</code></p>
 
           <h2 id="delete-a-language-resource">Delete a language resource</h2>
 
@@ -615,11 +927,299 @@ Has embeddable properties.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">DELETE /0.1/languages/{id}</code></p>
+<p><code class="prettyprint">DELETE /0.2/language/{id}</code></p>
 
           <h1 id="references">References</h1>
 
+          <h2 id="list-references">List references</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">43</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"per_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"current_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"last_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"next_page_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.dinkomo.frnk.ca/0.2/reference?page=2"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"prev_page_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"from"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"to"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"book"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Florence Abena Dolphyne"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A Comprehensive Course in Twi (Asante) for the Non-Twi Learner"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1996-01-01"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"publisher"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ghana Universities Press"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"isbn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9964302452"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"isbn-13"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9789964302450"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Accra"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"string"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NE1lCDWP"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+        </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">GET /0.2/reference</code></p>
+
+          <h2 id="retrieve-a-reference">Retrieve a reference</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"book"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Florence Abena Dolphyne"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A Comprehensive Course in Twi (Asante) for the Non-Twi Learner"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1996-01-01"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"publisher"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ghana Universities Press"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"isbn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9964302452"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"isbn-13"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9789964302450"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Accra"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"string"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NE1lCDWP"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">GET /0.2/reference/{id}</code></p>
+
+          <h2 id="create-a-reference">Create a reference</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">POST /0.2/reference</code></p>
+
+          <h2 id="update-a-reference">Update a reference</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">PUT /0.2/reference/{id}</code></p>
+
+          <h2 id="delete-a-reference">Delete a reference</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">DELETE /0.2/reference/{id}</code></p>
+
           <h1 id="tags">Tags</h1>
+
+          <h2 id="list-tags">List tags</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">87</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"per_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"current_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"last_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"next_page_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.dinkomo.frnk.ca/0.2/tag?page=2"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"prev_page_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"from"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"to"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"numbers"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8MygI5E2"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"face"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"oMBLIdEA"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">GET /0.2/tag</code></p>
+
+          <h2 id="retrieve-a-tag">Retrieve a tag</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"body"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XE2KI7JV"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">GET /0.2/tag/{id}</code></p>
+
+          <h2 id="create-a-tag">Create a tag</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">POST /0.2/tag</code></p>
+
+          <h2 id="update-a-tag">Update a tag</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">PUT /0.2/tag/{id}</code></p>
+
+          <h2 id="delete-a-tag">Delete a tag</h2>
+
+<blockquote>
+<p>Sample request</p>
+</blockquote>
+<pre class="highlight shell"><code>
+</code></pre>
+<pre class="highlight javascript"><code><span class="c1">// ...</span>
+</code></pre>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// ...
+</span></code></pre>
+
+<blockquote>
+<p>Sample response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="w">
+</span></code></pre>
+
+<p><code class="prettyprint">DELETE /0.2/tag/{id}</code></p>
 
       </div>
       <div class="dark-box">

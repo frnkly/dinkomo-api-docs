@@ -20,8 +20,18 @@ includes:
   - intro/rate-limiting
 
   - alphabets/intro
+  - alphabets/list
+  - alphabets/get
+  - alphabets/post
+  - alphabets/put
+  - alphabets/delete
 
   - countries/intro
+  - countries/list
+  - countries/get
+  - countries/post
+  - countries/put
+  - countries/delete
 
   - cultures/intro
 
@@ -46,8 +56,18 @@ includes:
   - languages/delete
 
   - references/intro
+  - references/list
+  - references/get
+  - references/post
+  - references/put
+  - references/delete
 
   - tags/intro
+  - tags/list
+  - tags/get
+  - tags/post
+  - tags/put
+  - tags/delete
 
 search: true
 ---

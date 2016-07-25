@@ -14,7 +14,6 @@
 <?php
 
 // ...
-// /api/0.1/tags/XE2KI7JV
 ```
 
 > Sample response
@@ -26,4 +25,4 @@
 }
 ```
 
-`GET /0.1/tags/{id}`
+`GET /0.2/tag/{id}`

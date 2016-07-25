@@ -1,4 +1,4 @@
-## Delete a language resource
+## Delete an alphabet
 
 > Sample request
 
@@ -22,4 +22,4 @@
 
 ```
 
-`DELETE /0.2/language/{id}`
+`DELETE /0.2/alphabet/{id}`

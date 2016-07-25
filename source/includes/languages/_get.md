@@ -68,4 +68,4 @@
 Has embeddable properties.
 </aside>
 
-`GET /0.1/languges/{code}`
+`GET /0.2/language/{code}`
