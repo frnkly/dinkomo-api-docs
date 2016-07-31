@@ -22,4 +22,4 @@
 
 ```
 
-`DELETE /0.1/definitions/{id}`
+`DELETE /definitions/{id}`

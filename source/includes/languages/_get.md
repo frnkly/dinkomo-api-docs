@@ -14,7 +14,7 @@
 <?php
 
 // ...
-// /api/0.1/language/OJjYiQEa?embed=parentName,definitionsCount,uri,editUri,firstDefinition,latestDefinition,randomDefinition
+// /api/0.2/language/OJjYiQEa?embed=parentName,definitionsCount,uri,editUri,firstDefinition,latestDefinition,randomDefinition
 ```
 
 > Sample response
@@ -64,8 +64,4 @@
 }
 ```
 
-<aside class="success">
-Has embeddable properties.
-</aside>
-
-`GET /0.2/language/{code}`
+`GET /languages/{code}`

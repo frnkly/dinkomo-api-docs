@@ -22,4 +22,4 @@
 
 ```
 
-`POST /0.2/reference`
+`POST /references`

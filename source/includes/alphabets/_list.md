@@ -58,4 +58,4 @@
 }
 ```
 
-`GET /0.2/alphabet`
+`GET /alphabets`

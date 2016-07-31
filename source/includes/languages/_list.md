@@ -22,4 +22,4 @@
 
 ```
 
-`GET /0.2/language`
+`GET /languages`

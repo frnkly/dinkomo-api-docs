@@ -54,4 +54,4 @@
 }
 ```
 
-`GET /0.2/country`
+`GET /countries`

@@ -32,13 +32,13 @@
         {
             "title": "numbers",
             "deletedAt": null,
-            "language": "",
+            "language": "en",
             "uniqueId": "8MygI5E2"
         },
         {
             "title": "face",
             "deletedAt": null,
-            "language": "",
+            "language": "en",
             "uniqueId": "oMBLIdEA"
         },
         {...}
@@ -46,4 +46,4 @@
 }
 ```
 
-`GET /0.2/tag`
+`GET /tags`

@@ -33,4 +33,4 @@
 }
 ```
 
-`GET /0.2/alphabet/{id}`
+`GET /alphabets/{id}`

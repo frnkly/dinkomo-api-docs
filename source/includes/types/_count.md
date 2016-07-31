@@ -22,4 +22,4 @@
 
 ```
 
-`GET /0.1/{definitionType}/count`
+`GET /{definitionType}/count`

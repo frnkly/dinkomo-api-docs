@@ -3,12 +3,12 @@ title: Di Nkɔmɔ API Reference
 
 language_tabs:
   - shell: Shell
-  - javascript: AngularJS
+  - javascript: jQuery
   - php: PHP
 
 toc_footers:
   - <a href='http://dinkomo.frnk.ca'>Di Nkɔmɔ</a>
-  - <a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a>
+  - <a href='https://github.com/frnkly/dinkomo-docs'>Edit on Github</a>
 
 includes:
   - intro/welcome

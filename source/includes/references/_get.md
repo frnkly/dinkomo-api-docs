@@ -36,4 +36,4 @@
 }
 ```
 
-`GET /0.2/reference/{id}`
+`GET /references/{id}`

@@ -4,12 +4,12 @@
 
 | Parameter | Contents |
 | --- | --- |
-| uri | [string] Definition URI |
-| editUri | [string] URI to definition's edit form |
-| mainTitle | [string] Main title |
-| titleString | [string] All titles, as a string |
-| titleList | [array] Lists titles |
-| relatedDefinitionList | [array] Lists related definitions |
-| translation | [array] Lists translations |
-| mainLanguage | [object] |
-| languageList | [array] Lists languages |
+| **mainTitle** | `[string]` Main title for definition. |
+| **titleList** | `[array]` All definition titles. |
+| **translation** | `[array]` Translation in current locale. |
+| **translationData** | `[object]` All translations. |
+| **mainLanguage** | `[object]` Main language definition exists in. |
+| **languageList** | `[array]` All languages definition exists in. |
+| **tagList** | `[array]` Tags. |
+| **relatedDefinitionList** | `[array]` Related definitions. |
+| **referenceList** | `[array]` References for translation in current locale. |

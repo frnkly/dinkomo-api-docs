@@ -22,4 +22,4 @@
 
 ```
 
-`POST /0.2/country`
+`POST /countries`

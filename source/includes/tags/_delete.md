@@ -22,4 +22,4 @@
 
 ```
 
-`DELETE /0.2/tag/{id}`
+`DELETE /tags/{id}`

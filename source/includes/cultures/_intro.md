@@ -1,5 +1,5 @@
 # Cultures
 
-<aside class="info">
-In development...
+<aside class="warning">
+In Development.
 </aside>

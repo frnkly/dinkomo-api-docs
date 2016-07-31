@@ -22,4 +22,4 @@
 
 ```
 
-`DELETE /0.2/reference/{id}`
+`DELETE /references/{id}`

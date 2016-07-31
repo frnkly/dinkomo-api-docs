@@ -2,13 +2,12 @@
 
 ## Embeds for languages
 
-| Parameter | Contents |
+| Parameter | Description |
 | --- | --- |
-| uri | [string] Language URI |
-| editUri | [string] URI to language's edit form |
-| parentUri | [string] Parent language's URI |
-| parentName | [string] Name of parent language |
-| definitionsCount | [integer] |
-| firstDefinition | [object] |
-| latestDefinition | [object] |
-| randomDefinition | [object] |
+| **uri** | `[string]` Language URI |
+| **parentUri** | `[string]` URI of parent language |
+| **parentName** | `[string]` Name of parent language |
+| **definitionsCount** | `[integer]` Number of definitions in language |
+| **firstDefinition** | `[object]` First definition for language |
+| **latestDefinition** | `[object]` Latest definition for language |
+| **randomDefinition** | `[object]` Random definition in language |

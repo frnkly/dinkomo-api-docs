@@ -25,4 +25,4 @@
 }
 ```
 
-`GET /0.2/tag/{id}`
+`GET /tags/{id}`

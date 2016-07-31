@@ -22,4 +22,4 @@
 
 ```
 
-`GET /0.1/{definitionType}/title/{title}`
+`GET /{definitionType}/title/{title}`

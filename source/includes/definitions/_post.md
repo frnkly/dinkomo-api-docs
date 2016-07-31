@@ -22,4 +22,4 @@
 
 ```
 
-`POST /0.1/definitions`
+`POST /definitions`

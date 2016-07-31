@@ -14,7 +14,7 @@
 <?php
 
 // ...
-// /api/0.1/definition/8MyQRHYM?embed=uri,editUri,mainTitle,titleString,titleList,translation,languageList
+// /api/0.2/definition/8MyQRHYM?embed=uri,editUri,mainTitle,titleString,titleList,translation,languageList
 ```
 
 > Sample response
@@ -79,4 +79,4 @@
 }
 ```
 
-`GET /0.1/definitions/{id}`
+`GET /definitions/{id}`

@@ -22,4 +22,4 @@
 
 ```
 
-`PUT /0.2/country/{id}`
+`PUT /countries/{id}`

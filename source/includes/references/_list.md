@@ -43,10 +43,10 @@
             "string": "",
             "deletedAt": null,
             "uniqueId": "NE1lCDWP"
-        }
+        },
         {...}
     ]
 }
 ```
 
-`GET /0.2/reference`
+`GET /references`

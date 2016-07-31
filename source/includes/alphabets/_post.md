@@ -22,4 +22,4 @@
 
 ```
 
-`POST /0.2/alphabet`
+`POST /alphabets`

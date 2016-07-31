@@ -29,7 +29,7 @@
       <img src="images/logo.png" />
         <div class="lang-selector">
               <a href="#" data-language-name="shell">Shell</a>
-              <a href="#" data-language-name="javascript">AngularJS</a>
+              <a href="#" data-language-name="javascript">jQuery</a>
               <a href="#" data-language-name="php">PHP</a>
         </div>
         <div class="search">
@@ -40,7 +40,7 @@
       </div>
         <ul class="toc-footer">
             <li><a href='http://dinkomo.frnk.ca'>Di Nkɔmɔ</a></li>
-            <li><a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
+            <li><a href='https://github.com/frnkly/dinkomo-docs'>Edit on Github</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -80,6 +80,14 @@ curl <span class="s2">"api_endpoint_here"</span>
 <p>Make sure to replace <code class="prettyprint">meowmeowmeow</code> with your API key.</p>
 </blockquote>
 
+<aside class="success">
+Dos
+</aside>
+
+<aside class="warning">
+Donts
+</aside>
+
 <p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
 
 <p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
@@ -106,6 +114,10 @@ In Development.
 
           <h2 id="embeds">Embeds</h2>
 
+<aside class="warning">
+In Development.
+</aside>
+
 <p>Embeds, sometimes referred to as <em>expansions</em>, allow you to include related data to a model in a single request.</p>
 
           <h2 id="method-spoofing">Method Spoofing</h2>
@@ -123,6 +135,20 @@ In Development.
 </aside>
 
           <h1 id="alphabets">Alphabets</h1>
+
+<h2 id="embeds-for-alphabets">Embeds for alphabets</h2>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>languageList</strong></td>
+<td><code class="prettyprint">[array]</code> Languages using this alphabet.</td>
+</tr>
+</tbody></table>
 
           <h2 id="list-alphabets">List alphabets</h2>
 
@@ -180,7 +206,7 @@ In Development.
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.2/alphabet</code></p>
+<p><code class="prettyprint">GET /alphabets</code></p>
 
           <h2 id="retrieve-an-alphabet">Retrieve an alphabet</h2>
 
@@ -213,7 +239,7 @@ In Development.
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.2/alphabet/{id}</code></p>
+<p><code class="prettyprint">GET /alphabets/{id}</code></p>
 
           <h2 id="create-an-alphabet">Create an alphabet</h2>
 
@@ -235,7 +261,7 @@ In Development.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">POST /0.2/alphabet</code></p>
+<p><code class="prettyprint">POST /alphabets</code></p>
 
           <h2 id="update-an-alphabet">Update an alphabet</h2>
 
@@ -257,7 +283,7 @@ In Development.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">PUT /0.2/alphabet/{id}</code></p>
+<p><code class="prettyprint">PUT /alphabets/{id}</code></p>
 
           <h2 id="delete-an-alphabet">Delete an alphabet</h2>
 
@@ -279,7 +305,7 @@ In Development.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">DELETE /0.2/alphabet/{id}</code></p>
+<p><code class="prettyprint">DELETE /alphabets/{id}</code></p>
 
           <h1 id="countries">Countries</h1>
 
@@ -335,7 +361,7 @@ In Development.
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.2/country</code></p>
+<p><code class="prettyprint">GET /countries</code></p>
 
           <h2 id="retrieve-a-country">Retrieve a country</h2>
 
@@ -366,7 +392,7 @@ In Development.
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.2/country/{id}</code></p>
+<p><code class="prettyprint">GET /countries/{id}</code></p>
 
           <h2 id="create-a-country">Create a country</h2>
 
@@ -388,7 +414,7 @@ In Development.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">POST /0.2/country</code></p>
+<p><code class="prettyprint">POST /countries</code></p>
 
           <h2 id="update-a-country">Update a country</h2>
 
@@ -410,7 +436,7 @@ In Development.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">PUT /0.2/country/{id}</code></p>
+<p><code class="prettyprint">PUT /countries/{id}</code></p>
 
           <h2 id="delete-a-country">Delete a country</h2>
 
@@ -432,12 +458,12 @@ In Development.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">DELETE /0.2/country/{id}</code></p>
+<p><code class="prettyprint">DELETE /countries/{id}</code></p>
 
           <h1 id="cultures">Cultures</h1>
 
-<aside class="info">
-In development&hellip;
+<aside class="warning">
+In Development.
 </aside>
 
           <h1 id="definitions">Definitions</h1>
@@ -451,40 +477,40 @@ In development&hellip;
 </tr>
 </thead><tbody>
 <tr>
-<td>uri</td>
-<td>[string] Definition URI</td>
+<td><strong>mainTitle</strong></td>
+<td><code class="prettyprint">[string]</code> Main title for definition.</td>
 </tr>
 <tr>
-<td>editUri</td>
-<td>[string] URI to definition&rsquo;s edit form</td>
+<td><strong>titleList</strong></td>
+<td><code class="prettyprint">[array]</code> All definition titles.</td>
 </tr>
 <tr>
-<td>mainTitle</td>
-<td>[string] Main title</td>
+<td><strong>translation</strong></td>
+<td><code class="prettyprint">[array]</code> Translation in current locale.</td>
 </tr>
 <tr>
-<td>titleString</td>
-<td>[string] All titles, as a string</td>
+<td><strong>translationData</strong></td>
+<td><code class="prettyprint">[object]</code> All translations.</td>
 </tr>
 <tr>
-<td>titleList</td>
-<td>[array] Lists titles</td>
+<td><strong>mainLanguage</strong></td>
+<td><code class="prettyprint">[object]</code> Main language definition exists in.</td>
 </tr>
 <tr>
-<td>relatedDefinitionList</td>
-<td>[array] Lists related definitions</td>
+<td><strong>languageList</strong></td>
+<td><code class="prettyprint">[array]</code> All languages definition exists in.</td>
 </tr>
 <tr>
-<td>translation</td>
-<td>[array] Lists translations</td>
+<td><strong>tagList</strong></td>
+<td><code class="prettyprint">[array]</code> Tags.</td>
 </tr>
 <tr>
-<td>mainLanguage</td>
-<td>[object]</td>
+<td><strong>relatedDefinitionList</strong></td>
+<td><code class="prettyprint">[array]</code> Related definitions.</td>
 </tr>
 <tr>
-<td>languageList</td>
-<td>[array] Lists languages</td>
+<td><strong>referenceList</strong></td>
+<td><code class="prettyprint">[array]</code> References for translation in current locale.</td>
 </tr>
 </tbody></table>
 
@@ -508,7 +534,7 @@ In development&hellip;
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.1/definitions</code></p>
+<p><code class="prettyprint">GET /definitions</code></p>
 
           <h2 id="retrieve-a-definition">Retrieve a definition</h2>
 
@@ -522,7 +548,7 @@ In development&hellip;
 <pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="c1">// ...
-// /api/0.1/definition/8MyQRHYM?embed=uri,editUri,mainTitle,titleString,titleList,translation,languageList
+// /api/0.2/definition/8MyQRHYM?embed=uri,editUri,mainTitle,titleString,titleList,translation,languageList
 </span></code></pre>
 
 <blockquote>
@@ -587,7 +613,7 @@ In development&hellip;
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.1/definitions/{id}</code></p>
+<p><code class="prettyprint">GET /definitions/{id}</code></p>
 
           <h2 id="create-a-definition">Create a definition</h2>
 
@@ -609,7 +635,7 @@ In development&hellip;
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">POST /0.1/definitions</code></p>
+<p><code class="prettyprint">POST /definitions</code></p>
 
           <h2 id="update-a-definition">Update a definition</h2>
 
@@ -631,7 +657,7 @@ In development&hellip;
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">PUT /0.1/definitions/{id}</code></p>
+<p><code class="prettyprint">PUT /definitions/{id}</code></p>
 
           <h2 id="delete-a-definition">Delete a definition</h2>
 
@@ -653,15 +679,50 @@ In development&hellip;
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">DELETE /0.1/definitions/{id}</code></p>
+<p><code class="prettyprint">DELETE /definitions/{id}</code></p>
 
           <h2 id="definition-of-the-day">Definition of the day</h2>
 
-<p><code class="prettyprint">GET /0.1/word/daily</code></p>
+<p><code class="prettyprint">GET /words/daily</code></p>
 
-<p><code class="prettyprint">GET /0.1/expression/daily</code></p>
+<p><code class="prettyprint">GET /expressions/daily</code></p>
 
           <h1 id="definition-types">Definition types</h1>
+
+<p>Definitions are categorized by type. There are currently four supported definition types:</p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Endpoint</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>word</strong></td>
+<td><code class="prettyprint">/words</code></td>
+<td>Word definitions.</td>
+</tr>
+<tr>
+<td><strong>name</strong></td>
+<td><code class="prettyprint">/names</code></td>
+<td>Proper names, including places and people.</td>
+</tr>
+<tr>
+<td><strong>expression</strong></td>
+<td><code class="prettyprint">/expressions</code></td>
+<td>Expressions, proverbs, sayings, etc.</td>
+</tr>
+<tr>
+<td><strong>story</strong></td>
+<td><code class="prettyprint">/stories</code></td>
+<td>Stories, poems, songs, etc.</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Definition types have the same embeddable attributes as Definitions.
+</aside>
 
           <h2 id="count">Count</h2>
 
@@ -683,7 +744,7 @@ In development&hellip;
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.1/{definitionType}/count</code></p>
+<p><code class="prettyprint">GET /{definitionType}/count</code></p>
 
           <h2 id="search">Search</h2>
 
@@ -705,7 +766,7 @@ In development&hellip;
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.1/{definitionType}/search/{query}</code></p>
+<p><code class="prettyprint">GET /{definitionType}/search/{query}</code></p>
 
           <h2 id="exact-title-match">Exact title match</h2>
 
@@ -727,7 +788,7 @@ In development&hellip;
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.1/{definitionType}/title/{title}</code></p>
+<p><code class="prettyprint">GET /{definitionType}/title/{title}</code></p>
 
           <h1 id="languages">Languages</h1>
 
@@ -736,40 +797,36 @@ In development&hellip;
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Contents</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>uri</td>
-<td>[string] Language URI</td>
+<td><strong>uri</strong></td>
+<td><code class="prettyprint">[string]</code> Language URI</td>
 </tr>
 <tr>
-<td>editUri</td>
-<td>[string] URI to language&rsquo;s edit form</td>
+<td><strong>parentUri</strong></td>
+<td><code class="prettyprint">[string]</code> URI of parent language</td>
 </tr>
 <tr>
-<td>parentUri</td>
-<td>[string] Parent language&rsquo;s URI</td>
+<td><strong>parentName</strong></td>
+<td><code class="prettyprint">[string]</code> Name of parent language</td>
 </tr>
 <tr>
-<td>parentName</td>
-<td>[string] Name of parent language</td>
+<td><strong>definitionsCount</strong></td>
+<td><code class="prettyprint">[integer]</code> Number of definitions in language</td>
 </tr>
 <tr>
-<td>definitionsCount</td>
-<td>[integer]</td>
+<td><strong>firstDefinition</strong></td>
+<td><code class="prettyprint">[object]</code> First definition for language</td>
 </tr>
 <tr>
-<td>firstDefinition</td>
-<td>[object]</td>
+<td><strong>latestDefinition</strong></td>
+<td><code class="prettyprint">[object]</code> Latest definition for language</td>
 </tr>
 <tr>
-<td>latestDefinition</td>
-<td>[object]</td>
-</tr>
-<tr>
-<td>randomDefinition</td>
-<td>[object]</td>
+<td><strong>randomDefinition</strong></td>
+<td><code class="prettyprint">[object]</code> Random definition in language</td>
 </tr>
 </tbody></table>
 
@@ -793,7 +850,7 @@ In development&hellip;
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.2/language</code></p>
+<p><code class="prettyprint">GET /languages</code></p>
 
           <h2 id="retrieve-a-language-resource">Retrieve a language resource</h2>
 
@@ -807,7 +864,7 @@ In development&hellip;
 <pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
 <span class="c1">// ...
-// /api/0.1/language/OJjYiQEa?embed=parentName,definitionsCount,uri,editUri,firstDefinition,latestDefinition,randomDefinition
+// /api/0.2/language/OJjYiQEa?embed=parentName,definitionsCount,uri,editUri,firstDefinition,latestDefinition,randomDefinition
 </span></code></pre>
 
 <blockquote>
@@ -857,11 +914,7 @@ In development&hellip;
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
-<aside class="success">
-Has embeddable properties.
-</aside>
-
-<p><code class="prettyprint">GET /0.2/language/{code}</code></p>
+<p><code class="prettyprint">GET /languages/{code}</code></p>
 
           <h2 id="create-a-language-resource">Create a language resource</h2>
 
@@ -883,7 +936,7 @@ Has embeddable properties.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">POST /0.2/language</code></p>
+<p><code class="prettyprint">POST /languages</code></p>
 
           <h2 id="update-a-language-resource">Update a language resource</h2>
 
@@ -905,7 +958,7 @@ Has embeddable properties.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">PUT /0.2/language/{code}</code></p>
+<p><code class="prettyprint">PUT /languages/{code}</code></p>
 
           <h2 id="delete-a-language-resource">Delete a language resource</h2>
 
@@ -927,9 +980,55 @@ Has embeddable properties.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">DELETE /0.2/language/{id}</code></p>
+<p><code class="prettyprint">DELETE /languages/{id}</code></p>
 
           <h1 id="references">References</h1>
+
+<h2 id="embeds-for-references">Embeds for references</h2>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>name</strong></td>
+<td><code class="prettyprint">[string]</code> Name or title of reference.</td>
+</tr>
+<tr>
+<td><strong>shortCitation</strong></td>
+<td><code class="prettyprint">[string]</code> Abridged reference summary.</td>
+</tr>
+<tr>
+<td><strong>longCitation</strong></td>
+<td><code class="prettyprint">[string]</code> Longer reference summary.</td>
+</tr>
+<tr>
+<td><strong>apaCitation</strong></td>
+<td><code class="prettyprint">[string]</code> APA-style citation.</td>
+</tr>
+<tr>
+<td><strong>chicagoCitation</strong></td>
+<td><code class="prettyprint">[string]</code> Chicago-style citation.</td>
+</tr>
+<tr>
+<td><strong>harvardCitation</strong></td>
+<td><code class="prettyprint">[string]</code> Harvard-style citation.</td>
+</tr>
+<tr>
+<td><strong>ieeeCitation</strong></td>
+<td><code class="prettyprint">[string]</code> IEEE-style citation.</td>
+</tr>
+<tr>
+<td><strong>iso690Citation</strong></td>
+<td><code class="prettyprint">[string]</code> ISO 690-style citation.</td>
+</tr>
+<tr>
+<td><strong>mlaCitation</strong></td>
+<td><code class="prettyprint">[string]</code> MLA-style citation.</td>
+</tr>
+</tbody></table>
 
           <h2 id="list-references">List references</h2>
 
@@ -972,13 +1071,13 @@ Has embeddable properties.
             </span><span class="nt">"string"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
             </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NE1lCDWP"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
         </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.2/reference</code></p>
+<p><code class="prettyprint">GET /references</code></p>
 
           <h2 id="retrieve-a-reference">Retrieve a reference</h2>
 
@@ -1014,7 +1113,7 @@ Has embeddable properties.
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.2/reference/{id}</code></p>
+<p><code class="prettyprint">GET /references/{id}</code></p>
 
           <h2 id="create-a-reference">Create a reference</h2>
 
@@ -1036,7 +1135,7 @@ Has embeddable properties.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">POST /0.2/reference</code></p>
+<p><code class="prettyprint">POST /references</code></p>
 
           <h2 id="update-a-reference">Update a reference</h2>
 
@@ -1058,7 +1157,7 @@ Has embeddable properties.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">PUT /0.2/reference/{id}</code></p>
+<p><code class="prettyprint">PUT /references/{id}</code></p>
 
           <h2 id="delete-a-reference">Delete a reference</h2>
 
@@ -1080,9 +1179,23 @@ Has embeddable properties.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">DELETE /0.2/reference/{id}</code></p>
+<p><code class="prettyprint">DELETE /references/{id}</code></p>
 
           <h1 id="tags">Tags</h1>
+
+<h2 id="embeds-for-tags">Embeds for tags</h2>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>definitionCount</strong></td>
+<td><code class="prettyprint">[string]</code> Number of definitions under the tag.</td>
+</tr>
+</tbody></table>
 
           <h2 id="list-tags">List tags</h2>
 
@@ -1114,13 +1227,13 @@ Has embeddable properties.
         </span><span class="p">{</span><span class="w">
             </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"numbers"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8MygI5E2"</span><span class="w">
         </span><span class="p">},</span><span class="w">
         </span><span class="p">{</span><span class="w">
             </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"face"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"deletedAt"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"oMBLIdEA"</span><span class="w">
         </span><span class="p">},</span><span class="w">
         </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">
@@ -1128,7 +1241,7 @@ Has embeddable properties.
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.2/tag</code></p>
+<p><code class="prettyprint">GET /tags</code></p>
 
           <h2 id="retrieve-a-tag">Retrieve a tag</h2>
 
@@ -1153,7 +1266,7 @@ Has embeddable properties.
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">GET /0.2/tag/{id}</code></p>
+<p><code class="prettyprint">GET /tags/{id}</code></p>
 
           <h2 id="create-a-tag">Create a tag</h2>
 
@@ -1175,7 +1288,7 @@ Has embeddable properties.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">POST /0.2/tag</code></p>
+<p><code class="prettyprint">POST /tags</code></p>
 
           <h2 id="update-a-tag">Update a tag</h2>
 
@@ -1197,7 +1310,7 @@ Has embeddable properties.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">PUT /0.2/tag/{id}</code></p>
+<p><code class="prettyprint">PUT /tags/{id}</code></p>
 
           <h2 id="delete-a-tag">Delete a tag</h2>
 
@@ -1219,13 +1332,13 @@ Has embeddable properties.
 <pre class="highlight json"><code><span class="w">
 </span></code></pre>
 
-<p><code class="prettyprint">DELETE /0.2/tag/{id}</code></p>
+<p><code class="prettyprint">DELETE /tags/{id}</code></p>
 
       </div>
       <div class="dark-box">
           <div class="lang-selector">
                 <a href="#" data-language-name="shell">Shell</a>
-                <a href="#" data-language-name="javascript">AngularJS</a>
+                <a href="#" data-language-name="javascript">jQuery</a>
                 <a href="#" data-language-name="php">PHP</a>
           </div>
       </div>
