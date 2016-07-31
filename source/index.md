@@ -8,7 +8,7 @@ language_tabs:
 
 toc_footers:
   - <a href='http://dinkomo.frnk.ca'>Di Nkɔmɔ</a>
-  - <a href='https://github.com/frnkly/dinkomo-docs'>Edit on Github</a>
+  - <a href='https://github.com/frnkly/dinkomo-api-docs'>Edit on Github</a>
 
 includes:
   - intro/welcome
